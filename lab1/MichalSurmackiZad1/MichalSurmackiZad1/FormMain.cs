@@ -167,16 +167,16 @@ namespace MichalSurmackiZad1
             {
                 using (FormHowManyStocks stocksForm = new FormHowManyStocks())
                 {
-                    stocksForm.setMoney(money);
-                    stocksForm.setCompanyStocksArray(stocksCompanyArray);
-                    stocksForm.setPlayersStocksArray(playersStocksCompanyArray);
+                    stocksForm.SetMoney(money);
+                    stocksForm.SetCompanyStocksArray(stocksCompanyArray);
+                    stocksForm.SetPlayersStocksArray(playersStocksCompanyArray);
                     //liczba przekazywana do funkcje jest o jeden mniejsza ponieważ jest to indeks do tablicy
-                    stocksForm.setIndexOfCompany(0);
+                    stocksForm.SetIndexOfCompany(0);
                     if (stocksForm.ShowDialog() != DialogResult.OK)
                     {
-                        money = stocksForm.getMoney();
-                        playersStocksCompanyArray = stocksForm.getPlayersStocksArray();
-                        stocksCompanyArray = stocksForm.getCompanyStocksArray();
+                        money = stocksForm.GetMoney();
+                        playersStocksCompanyArray = stocksForm.GetPlayersStocksArray();
+                        stocksCompanyArray = stocksForm.GetCompanyStocksArray();
                     }
                 }
             }
@@ -197,16 +197,16 @@ namespace MichalSurmackiZad1
             {
                 using (FormHowManyStocks stocksForm = new FormHowManyStocks())
                 {
-                    stocksForm.setMoney(money);
-                    stocksForm.setCompanyStocksArray(stocksCompanyArray);
-                    stocksForm.setPlayersStocksArray(playersStocksCompanyArray);
+                    stocksForm.SetMoney(money);
+                    stocksForm.SetCompanyStocksArray(stocksCompanyArray);
+                    stocksForm.SetPlayersStocksArray(playersStocksCompanyArray);
                     //liczba przekazywana do funkcje jest o jeden mniejsza ponieważ jest to indeks do tablicy
-                    stocksForm.setIndexOfCompany(1);
+                    stocksForm.SetIndexOfCompany(1);
                     if (stocksForm.ShowDialog() != DialogResult.OK)
                     {
-                        money = stocksForm.getMoney();
-                        playersStocksCompanyArray = stocksForm.getPlayersStocksArray();
-                        stocksCompanyArray = stocksForm.getCompanyStocksArray();
+                        money = stocksForm.GetMoney();
+                        playersStocksCompanyArray = stocksForm.GetPlayersStocksArray();
+                        stocksCompanyArray = stocksForm.GetCompanyStocksArray();
                     }
                 }
             }
@@ -228,16 +228,16 @@ namespace MichalSurmackiZad1
                 using (FormHowManyStocks stocksForm = new FormHowManyStocks())
                 {
 
-                    stocksForm.setMoney(money);
-                    stocksForm.setCompanyStocksArray(stocksCompanyArray);
-                    stocksForm.setPlayersStocksArray(playersStocksCompanyArray);
+                    stocksForm.SetMoney(money);
+                    stocksForm.SetCompanyStocksArray(stocksCompanyArray);
+                    stocksForm.SetPlayersStocksArray(playersStocksCompanyArray);
                     //liczba przekazywana do funkcje jest o jeden mniejsza ponieważ jest to indeks do tablicy
-                    stocksForm.setIndexOfCompany(2);
+                    stocksForm.SetIndexOfCompany(2);
                     if (stocksForm.ShowDialog() != DialogResult.OK)
                     {
-                        money = stocksForm.getMoney();
-                        playersStocksCompanyArray = stocksForm.getPlayersStocksArray();
-                        stocksCompanyArray = stocksForm.getCompanyStocksArray();
+                        money = stocksForm.GetMoney();
+                        playersStocksCompanyArray = stocksForm.GetPlayersStocksArray();
+                        stocksCompanyArray = stocksForm.GetCompanyStocksArray();
                     }
                 }
             }
@@ -259,16 +259,16 @@ namespace MichalSurmackiZad1
                 using (FormHowManyStocks stocksForm = new FormHowManyStocks())
                 {
 
-                    stocksForm.setMoney(money);
-                    stocksForm.setCompanyStocksArray(stocksCompanyArray);
-                    stocksForm.setPlayersStocksArray(playersStocksCompanyArray);
+                    stocksForm.SetMoney(money);
+                    stocksForm.SetCompanyStocksArray(stocksCompanyArray);
+                    stocksForm.SetPlayersStocksArray(playersStocksCompanyArray);
                     //liczba przekazywana do funkcje jest o jeden mniejsza ponieważ jest to indeks do tablicy
-                    stocksForm.setIndexOfCompany(3);
+                    stocksForm.SetIndexOfCompany(3);
                     if (stocksForm.ShowDialog() != DialogResult.OK)
                     {
-                        money = stocksForm.getMoney();
-                        playersStocksCompanyArray = stocksForm.getPlayersStocksArray();
-                        stocksCompanyArray = stocksForm.getCompanyStocksArray();
+                        money = stocksForm.GetMoney();
+                        playersStocksCompanyArray = stocksForm.GetPlayersStocksArray();
+                        stocksCompanyArray = stocksForm.GetCompanyStocksArray();
                     }
                 }
             }
@@ -290,16 +290,16 @@ namespace MichalSurmackiZad1
                 using (FormHowManyStocks stocksForm = new FormHowManyStocks())
                 {
 
-                    stocksForm.setMoney(money);
-                    stocksForm.setCompanyStocksArray(stocksCompanyArray);
-                    stocksForm.setPlayersStocksArray(playersStocksCompanyArray);
+                    stocksForm.SetMoney(money);
+                    stocksForm.SetCompanyStocksArray(stocksCompanyArray);
+                    stocksForm.SetPlayersStocksArray(playersStocksCompanyArray);
                     //liczba przekazywana do funkcje jest o jeden mniejsza ponieważ jest to indeks do tablicy
-                    stocksForm.setIndexOfCompany(4);
+                    stocksForm.SetIndexOfCompany(4);
                     if (stocksForm.ShowDialog() != DialogResult.OK)
                     {
-                        money = stocksForm.getMoney();
-                        playersStocksCompanyArray = stocksForm.getPlayersStocksArray();
-                        stocksCompanyArray = stocksForm.getCompanyStocksArray();
+                        money = stocksForm.GetMoney();
+                        playersStocksCompanyArray = stocksForm.GetPlayersStocksArray();
+                        stocksCompanyArray = stocksForm.GetCompanyStocksArray();
                     }
                 }
             }
@@ -317,9 +317,9 @@ namespace MichalSurmackiZad1
         private void buttonExit_Click(object sender, EventArgs e)
         {
             FormEndGameAndResults endGame = new FormEndGameAndResults();
-            endGame.setMoney(money);
-            endGame.setMainResult(mainResult);
-            endGame.setTime(mainTime);
+            endGame.SetMoney(money);
+            endGame.SetMainResult(mainResult);
+            endGame.SetTime(mainTime);
             endGame.Show();
             this.Hide();
         }

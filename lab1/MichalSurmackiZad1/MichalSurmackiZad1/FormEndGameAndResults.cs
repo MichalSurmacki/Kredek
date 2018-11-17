@@ -18,7 +18,7 @@ namespace MichalSurmackiZad1
         /// Funkcja ustawiajaca wartosc zmiennej mainResult.
         /// </summary>
         /// <param name="value"></param>
-        public void setMainResult(double value)
+        public void SetMainResult(double value)
         {
             mainResult = value;
         }
@@ -29,7 +29,7 @@ namespace MichalSurmackiZad1
         /// Funkcja ustawiajaca wartosc zmiennej money.
         /// </summary>
         /// <param name="value"></param>
-        public void setMoney(double value)
+        public void SetMoney(double value)
         {
             money = value;
         }
@@ -39,7 +39,7 @@ namespace MichalSurmackiZad1
         /// <summary>
         /// Funkcja ustawiająca wartość zmiennej mainTime.
         /// </summary>
-        public void setTime(int value)
+        public void SetTime(int value)
         {
             mainTime = value;
         }

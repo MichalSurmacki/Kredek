@@ -19,7 +19,7 @@ namespace MichalSurmackiZad1
         /// Funkcja ustawiajaca wartosc zmiennej money.
         /// </summary>
         /// <param name="value"></param>
-        public void setMoney(double value)
+        public void SetMoney(double value)
         {
             money = value;
         }
@@ -28,7 +28,7 @@ namespace MichalSurmackiZad1
         /// Funkcja zwracajaca zmienna przechowywujaca wartosc pieniedzy gracza.
         /// </summary>
         /// <returns></returns>
-        public double getMoney()
+        public double GetMoney()
         {
             return money;
         }
@@ -40,7 +40,7 @@ namespace MichalSurmackiZad1
         /// Funkcja ustawiająca tablice wartości akcji firm.
         /// </summary>
         /// <param name="value"></param>
-        public void setCompanyStocksArray(double[] value)
+        public void SetCompanyStocksArray(double[] value)
         {
             companyStocksArray = value;
         }
@@ -49,7 +49,7 @@ namespace MichalSurmackiZad1
         /// Funkcja zwracajaca tablice przechowywujaca akcje firm.
         /// </summary>
         /// <returns></returns>
-        public double[] getCompanyStocksArray()
+        public double[] GetCompanyStocksArray()
         {
             return companyStocksArray;
         }
@@ -61,7 +61,7 @@ namespace MichalSurmackiZad1
         /// Funkcja ustawiajaca tablice wartosci akcji gracza.
         /// </summary>
         /// <param name="value"></param>
-        public void setPlayersStocksArray(double[] value)
+        public void SetPlayersStocksArray(double[] value)
         {
             playersStocksArray = value;
         }
@@ -70,14 +70,14 @@ namespace MichalSurmackiZad1
         /// Funkcja zwracajaca tablicę przechowywujaca akcje zakupione przez gracza/ 
         /// </summary>
         /// <returns></returns>
-        public double[] getPlayersStocksArray()
+        public double[] GetPlayersStocksArray()
         {
             return playersStocksArray;
         }
 
         //zmienna przechowywujaca indeks firmy której gracz chce kupic akcje
         int indexOfCompany;
-        public void setIndexOfCompany(int value)
+        public void SetIndexOfCompany(int value)
         {
             indexOfCompany = value;
         }
