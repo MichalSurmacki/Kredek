@@ -20,7 +20,7 @@ namespace MichalSurmackiLab03
         public FormMain()
         {
             InitializeComponent();
-            connection = new SqlConnection(@"Data Source=LAPTOP-13MBOPF6\MICHALSQL; database=MichalSurmackiLab03; Trusted_Connection=yes");
+            connection = new SqlConnection(@"Data Source=LAPTOP-13MBOPF6\MICHALSQL; database=MateuszRotykiewiczLab32; Trusted_Connection=yes");
 
         }
         /// <summary>
