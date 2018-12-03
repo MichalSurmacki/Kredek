@@ -110,6 +110,11 @@ namespace MichalSurmackiLab03Zad1
             }
         }
 
+        /// <summary>
+        /// ComboBox odpowiedzialny za wybór wyświetlania tabeli.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBoxData_SelectedIndexChanged(object sender, EventArgs e)
         {
             //wyświetlanie piszczególnych tabeli z bazy w przypadku zmiany stanu comboboxa
