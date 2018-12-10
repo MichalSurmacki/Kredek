@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--Napis wyświetlający się w karcie przeglądarki jako tytuł-->
+    <title>Album</title>
+    <!--Połączenie z css-->
+    <link href="../styles/playlistStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <!--Kontener z wszystkimi elementami stronuy-->
+    <div id="mainPlaylistContainer">
+
+        <!--Kontener zawierajacy naglowek strony-->
+        <div id="topPlaylistContainer">
+            <h2>Lista utworów</h2>
+        </div>
+
+        <!--Kontener zawierający okładkę płyty-->
+        <div id="albumCover">
+            <img id="cover" />
+        </div>
+
+        <!--Kontener zawierający informacje o utowrach znajdujących się na płycie-->
+        <div id="playlist">
+        </div>
+
+    </div>
+
+    <!--Połączenie z javascript-->
+    <script type="text/javascript" src="../scripts/playlistScript.js"></script>
+    <script>FillTheSite()</script>
+
+</body>
+</html>

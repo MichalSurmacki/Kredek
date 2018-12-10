@@ -1,0 +1,63 @@
+﻿/*instrukcje ustawiajace wlasciwosci calej strony - w ogóle*/
+body {
+    background-color: black;
+}
+
+/*Kontener zawierający wszystkie inne kontenery znajdujące się na stronie*/
+#mainContainer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Kontener znajdujący się powyżej wszystkich innych - tytułowy*/
+#topContainer {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Kontener zawierający okładki albumów - po lewej stronie strony*/
+#leftMusicAlbums {
+    float: left;
+    width: 25%;
+}
+
+/*Kontener zawierający okładki albumów - po prawej stronie strony*/
+#rightMusicAlbums {
+    float: left;
+    width: 25%;
+}
+
+/*Kontener zawierający tabelę tytułów albumów muzycznych*/
+#tableOfAlbumsContainer {
+    width: 50%;
+    text-align: center;
+    color: gray;
+    float: left;
+}
+
+/*Tabela zawierająca tytuły albumów muzycznych*/
+#musicAlbumsTable {
+    width: 100%;
+}
+/*Ustawienie obramowania tabeli musicAlbumsTable*/
+#musicAlbumsTable, td, th {
+    border: solid 1px white;
+    border-collapse: collapse;
+    padding: 25px;
+}
+
+/*Kontener zawierający odnościk do wizytówki autora*/
+#authorID {
+    clear: both;
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Rozmiary pojawieających się na stronie okładek albumów muzycznych*/
+#KindOfBlue, #DarkSideOfTheMoon, #BlackHolesAndRevelations, #AtomHeartMother, #TheWall, #KsiegaTajemniczaProlog, #JazzWWolnychChwilach, #Kartagina {
+    width: 250px;
+    height: 250px;
+}

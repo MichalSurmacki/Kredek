@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--Ustawienie tytułu w karcie przeglądarki-->
+    <title>Moja muzyka</title>
+    <!--Połączenie z .css-->
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <!--Główny kontener z danymi na stronie-->
+    <div id="mainContainer">
+
+        <!--Nagłówek strony-->
+        <div id="topContainer">
+            <h2>Moje ulubione płyty!</h2>
+        </div>
+
+        <!--Kontener z okladkami po lewej stronie-->
+        <div id="leftMusicAlbums">
+            <img src="../images/DarkSideOfTheMoon.jpg" id="DarkSideOfTheMoon" />
+            <img src="../images/Kartagina.jpg" id="Kartagina" />
+            <img src="../images/JazzWWolnychChwilach.jpg" id="JazzWWolnychChwilach" />
+            <img src="../images/KsięgaTajemniczaProlog.jpg" id="KsiegaTajemniczaProlog" />
+        </div>
+
+        <!--Tabela z nazwami albumów muzycznych-->
+        <div id="tableOfAlbumsContainer">
+            <h2>Tabela moich ulubionych płyt muzycznych:</h2>
+            <!--TUTAJ TABELA-->
+            <table id="musicAlbumsTable"></table>
+        </div>
+
+        <!--Kontener z okladkami po prawej stronie-->
+        <div id="rightMusicAlbums">
+            <img src="../images/KindOfBlue.jpg" id="KindOfBlue" />
+            <img src="../images/TheWall.jpg" id="TheWall" />
+            <img src="../images/AtomHeartMother.jpg" id="AtomHeartMother" />
+            <img src="../images/BlackHolesAndRevelations.png" id="BlackHolesAndRevelations" />
+        </div>
+
+        <!--Kontener z odnośnikiem-->
+        <div id="authorID">
+            <h2 style="cursor: pointer; font-style: oblique;"><a href="../pages/myCard.html">Moja wizytówka!</a></h2>
+        </div>
+
+    </div>
+
+    <!--Połączenie z javaSctipt-->
+    <script type="text/javascript" src="../scripts/playlistScript.js"></script>
+    <script type="text/javascript" src="../scripts/script.js"></script>
+    <script>FillTheTable();</script>
+</body>
+</html>

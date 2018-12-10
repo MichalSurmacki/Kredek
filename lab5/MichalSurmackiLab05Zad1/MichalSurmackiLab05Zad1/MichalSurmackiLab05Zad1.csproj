@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{31DACDCC-117E-497B-A4C3-15BE4ECC48B3}</ProjectGuid>
+    <ProjectGuid>{1685C861-7E6F-4D1F-A06F-1B2AF63B674B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MichalSurmackiLab05</RootNamespace>
-    <AssemblyName>MichalSurmackiLab05</AssemblyName>
+    <RootNamespace>MichalSurmackiLab05Zad1</RootNamespace>
+    <AssemblyName>MichalSurmackiLab05Zad1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -67,12 +67,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\buttonBlue.png" />
-    <Content Include="images\buttonGreen.png" />
-    <Content Include="images\buttonRed.png" />
-    <Content Include="index.html" />
+    <Content Include="images\AtomHeartMother.jpg" />
+    <Content Include="images\Avatar.jpg" />
+    <Content Include="images\BlackHolesAndRevelations.png" />
+    <Content Include="images\DarkSideOfTheMoon.jpg" />
+    <Content Include="images\JazzWWolnychChwilach.jpg" />
+    <Content Include="images\Kartagina.jpg" />
+    <Content Include="images\KindOfBlue.jpg" />
+    <Content Include="images\KsięgaTajemniczaProlog.jpg" />
+    <Content Include="images\TheWall.jpg" />
+    <Content Include="pages\index.html" />
+    <Content Include="pages\myCard.html" />
+    <Content Include="pages\playlist.html" />
+    <Content Include="scripts\playlistScript.js" />
     <Content Include="scripts\script.js" />
-    <Content Include="scripts\style.css" />
+    <Content Include="styles\cardStyle.css" />
+    <Content Include="styles\playlistStyle.css" />
+    <Content Include="styles\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,7 +98,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -101,9 +111,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51719</DevelopmentServerPort>
+          <DevelopmentServerPort>50136</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51719/</IISUrl>
+          <IISUrl>http://localhost:50136/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

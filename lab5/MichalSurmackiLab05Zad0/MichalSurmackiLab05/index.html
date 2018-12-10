@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Reaction timer</title>
-    <link href="scripts/Style.css" rel="stylesheet" type="text/css" />
+    <link href="scripts/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 
@@ -16,6 +16,7 @@
         Test your reaction time!
     </header>
 
+    <!--Sekcja w której znajdują się elementy-->
     <section>
         <!--Kontener z opisem-->
         <div id="description">
@@ -25,7 +26,7 @@
         <!--Kontener z przyciskiem-->
         <div style="width: 50%; float: left">
             <p>
-                <img src="images/buttonRed.png" id="button" atl="Timing button" onclick="StartIdle()" />
+                <img src="images/buttonRed.png" id="button" alt="Timing button" onclick="StartIdle()" />
             </p>
         </div>
         <!--Tabela z czasami-->
@@ -36,7 +37,7 @@
         </div>
     </section>
     <!--Połączenie z javaSctipt-->
-    <script src="scripts/Script.js"></script>
+    <script src="scripts/script.js"></script>
     <script>ResetTimes()</script>
     <script>UpdateTable(0)</script>
 </body>

@@ -1,0 +1,21 @@
+﻿/*instrukcje ustawiajace wlasciwosci calej strony - w ogóle*/
+body {
+    background-color: black;
+}
+
+/*ustawienie avatara w kole - dostęp za pomocą klasy*/
+.avatar {
+    border: 2px solid dimgrey;
+    border-radius: 100px;
+    background-color: white;
+}
+
+/*ustawnienie koloru tła lewej kolumny - dostęp za pomocą klasy*/
+.columnLeft {
+    background-color: grey;
+}
+
+/*ustawienie koloru tła prawej kolumny - dostęp za pomocą klasy*/
+.columnRight {
+    background-color: dimgrey;
+}

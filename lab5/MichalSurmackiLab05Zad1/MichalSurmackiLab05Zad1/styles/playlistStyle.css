@@ -1,0 +1,39 @@
+﻿/*instrukcje ustawiajace wlasciwosci calej strony - w ogóle*/
+body {
+    background-color: black;
+}
+
+/*Kontener zawierający wszystkie elementy strony*/
+#mainPlaylistContainer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Kontener zawaierający nagłówek strony*/
+#topPlaylistContainer {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Kontener zawierający okładkę albumu*/
+#albumCover {
+    float: left;
+    width: 50%;
+}
+
+/*Obraz zawierający okładkę albumu*/
+#cover {
+    width: 500px;
+    height: 500px;
+}
+
+/*Kontener zawierający listę utworów znajdujących się na płycie*/
+#playlist {
+    
+    color: white;
+    float: left;
+    width: 50%;
+}
+
