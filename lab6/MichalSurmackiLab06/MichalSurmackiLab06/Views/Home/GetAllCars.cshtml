@@ -1,0 +1,25 @@
+﻿@model List<MichalSurmackiLab06.ViewModels.Carr>
+@{
+    ViewBag.Title = "GetAllCars";
+}
+<html>
+<head>
+    <title>Get All Cars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="@Url.Content("~/Scripts/Style.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Pętla po wszystkich samochodach-->
+    @foreach (var Car in Model)
+    {
+        <div>
+            <h2>@Car.model</h2>
+            <h4>Producent: @Car.manufacturer</h4>
+            <h4>Cena: @Car.price</h4>
+            <img src="@Car.photo" alt="@Car.model" />
+            <hr />
+        </div>
+    }
+
+</body>
+</html>

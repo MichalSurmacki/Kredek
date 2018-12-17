@@ -1,0 +1,25 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "GetListOfModels";
+}
+
+<html>
+<head>
+    <title>Get All Cars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="@Url.Content("~/Scripts/Style.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Nagłówek listy-->
+    <h2>Lista modeli samochodów</h2>
+    <!--Wyświetlenie listy modeli-->
+    <ul>
+        @foreach (var carModel in Model)
+        {
+            <li>@Html.ActionLink(carModel, "GetCarByModel", "Home", new { model = carModel }, null)</li>
+        }
+    </ul>
+
+</body>
+</html>
+

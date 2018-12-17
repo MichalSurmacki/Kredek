@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="mainForm">
+    <!--Stona główna-->
+    <h1>STRONA POŚWIĘCONA FILMOM</h1>
+    <ul>
+        <li>@Html.ActionLink("Najlepsze fora dyskusyjne", "FavouriteForums", "Home")</li>
+        <li>@Html.ActionLink("Najlepsze filmy", "GetAllFilms", "Home")</li>
+        <li>@Html.ActionLink("Oceń film", "MarkForm", "Home")</li>
+        <li>@Html.ActionLink("Author", "AuthorForm", "Home")</li>
+    </ul>
+</div>

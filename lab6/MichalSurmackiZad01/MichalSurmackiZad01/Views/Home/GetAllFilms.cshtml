@@ -1,0 +1,25 @@
+﻿@model List<MichalSurmackiZad01.ViewsModel.MyFilm>
+@{
+    ViewBag.Title = "GetAllFilms";
+}
+<html>
+<head>
+    <title>Get All Films</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="@Url.Content("~/Scripts/Style.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Pętla - wszystkie filmy-->
+    @foreach (var Film in Model)
+    {
+        <div>
+            <h2>@Film.Name</h2>
+            <h4>Reżyser: @Film.Director</h4>
+            <h4>Rok Produkcji: @Film.YearOfProduction</h4>
+            <img src="@Film.Photo" alt="@Film.Name" />
+            <hr />
+        </div>
+    }
+
+</body>
+</html>
