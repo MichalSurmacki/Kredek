@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kredek.Db\Kredek.Db.csproj" />
+    <ProjectReference Include="..\Kredek.ViewModels\Kredek.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
