@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Kredek.Db.Entities
+namespace Zadanie.Db.Entities
 {
-    //model tabeli zawierającej 4 kolumny o następujących nazwach
-    public class ContactEntiti
+    //Tabela posiadająca 4 kolumny o następujących nazwach
+    public class LoanedBooksEntiti
     {
         [Key]
         public virtual int Id { get; set; }
+        public virtual int IdBook { get; set; }
         public virtual string Name { get; set; }
-        public virtual bool IsActive { get; set; }
-        public virtual string NewNew { get; set; }
+        public virtual string DateOfLend { get; set; }
     }
 }

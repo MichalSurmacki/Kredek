@@ -6,8 +6,10 @@ using System.Text;
 
 namespace Kredek.Db
 {
+    //model bazy danych
     public class DataContext : DbContext
     {
+        //tabela
         public virtual DbSet<ContactEntiti> ContactEntitis { get; set; }
 
 

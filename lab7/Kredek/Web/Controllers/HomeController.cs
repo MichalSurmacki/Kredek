@@ -13,14 +13,16 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
+        //wstrzykiwanie zależności
         private IContactService _contactService;
 
-        //ctor tab tab tworzy konstruktor
+        //ctor tab tab tworzy konstruktor - wstrzykiwanie zależności
         public HomeController(IContactService contactService)
         {
             _contactService = contactService;
         }
 
+        //metody zwracające odpowiednie widoki, odpowiednich podstron, stron
         public IActionResult Index()
         {
             List<ShowContactViewModel> model = _contactService.GetContacts();

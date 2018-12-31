@@ -8,9 +8,11 @@ using Kredek.ViewModels;
 
 namespace Kredek.Service.ContactService
 {
+    //implementacja metod interfejsu
     //ctrl + . wyswietlenie rozwiązań błędu
     public class ContactService : IContactService
     {
+        //metoda zrwacająca listę wszystkich imion
         public List<ShowContactViewModel> GetContacts()
         {
             var db = new DataContext();
@@ -29,6 +31,7 @@ namespace Kredek.Service.ContactService
             return list;
         }
 
+        //metoda zapisująca nowe imie w bazie
         public void SaveContact(SaveContactViewModel model)
         {
             var db = new DataContext();

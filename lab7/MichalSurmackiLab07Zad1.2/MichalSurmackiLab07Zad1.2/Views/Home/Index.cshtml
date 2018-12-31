@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Zadanie.ViewModels.ShowBooksViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Lista dostępnych Książek</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearOfPublish)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td> 
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearOfPublish)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-controller="Home" asp-action="LendBook" method="post">
+    <input placeholder="Wpisz Id" name="id" />
+    <button type="submit">Wypożycz</button>
+</form>
+
+<form asp-controller="Home" asp-action="AddBook" method="post">
+    <input placeholder="Wpisz tytuł" name="name" />
+    <input placeholder="Wpisz rok wydania" name="YearOfPublish" />
+    <input placeholder="Wpisz autora" name="author" />
+    <button type="submit">Dodaj do zbioru</button>
+</form>

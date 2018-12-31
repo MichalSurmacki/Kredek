@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Kredek.Service.ContactService
 {
+    //interfejs servisu
     public interface IContactService
     {
         void SaveContact(SaveContactViewModel model);
